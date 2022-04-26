@@ -68,6 +68,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
     integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./hover-effect.umd.js">
+
+  </script>
+  <script>
+    new hoverEffect({
+      parent: document.querySelector('.distortion'),
+      intensity: 0.2,
+      image1: './img/headshot1.png',
+      image2: './img/headshot2.png',
+      displacementImage: './img/distortion.png',
+      imagesRatio: 380 / 300
+    })
+  </script>
 </body>
 
 
