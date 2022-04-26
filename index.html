@@ -37,11 +37,17 @@
 
 
     <div class="text">
-      <h1>toni&guy</h1>
-      <h3>collection 2017 <br> duality</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut soluta asperiores perferendis, amet provident,
-        maxime omnis id cumque repudiandae, eaque reiciendis labore non assumenda dolor dolores voluptatem ea incidunt
-        voluptates.</p>
+
+      <h1><span class="hidetext">toni&guy</span></h1>
+      <h2>duality</h2>
+      <h3><span class="hidetext"> collection 2017 <br> duality</span> </h3>
+      <p>
+        <span class="hidetext">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut soluta asperiores perferendis, amet provident,
+          maxime omnis id cumque repudiandae, eaque reiciendis labore non assumenda dolor dolores voluptatem ea incidunt
+          voluptates.
+        </span>
+      </p>
     </div>
 
     <div class="sponsor">
@@ -80,6 +86,14 @@
       image2: './img/headshot2.png',
       displacementImage: './img/distortion.png',
       imagesRatio: 380 / 300
+    })
+
+
+    gsap.from(".text h1 .hidetext", {
+      delay: 1,
+      duration: 1.5,
+      y: "100%",
+      ease: "power2.out"
     })
   </script>
 </body>
